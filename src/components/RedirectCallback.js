@@ -19,7 +19,7 @@ class RedirectCallback extends React.Component {
     const parsed = qs.parse(this.props.location.search);
     SC2SDK.setAccessToken(parsed.access_token);
     this.props.fetchSC2UserData(parsed.access_token);
-    console.log(SC2SDK);
+    // TODO: redirection to dashboard
   };
 
   render() {
