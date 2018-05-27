@@ -23,6 +23,12 @@ import registerServiceWorker from './registerServiceWorker';
 
 import 'normalize.css';
 
+// global styles only because of vendor dependencies for sake of prototyping
+// TODO: Rewrite all styles to custom StyledComponents
+import 'font-awesome/css/font-awesome.min.css';
+import 'bootstrap/dist/css/bootstrap.css';
+import './vendor/style.min.css'; 
+
 // dotenv support
 require('dotenv').config();
 const sagaMiddleware = sagaMiddlewareFactory();
